@@ -62,9 +62,5 @@ image_to_test_encoding = face_recognition.face_encodings(image_to_test)[0]
 face_distances = face_recognition.face_distance(known_encodings, image_to_test_encoding)
 
 for i, face_distance in enumerate(face_distances):
-    # print("- With a very strict cutoff of 0.5, would the test image match the known image? {}".format(face_distance < 0.5))
     print(format(face_distance < 0.5))
 
-# print('Hello from python!')
-# print('First param:'+sys.argv[1]+'#')
-# print('Second param:'+sys.argv[2]+'#')
