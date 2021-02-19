@@ -44,6 +44,7 @@ if r.status_code == 200:
 else:
     print('Image 2 Couldn\'t be retreived')
 
+
 known_image = face_recognition.load_image_file("/home/gabriel/Documents/Programs/Service/image1.jpg")
 
 # Get the face encodings for the known images
